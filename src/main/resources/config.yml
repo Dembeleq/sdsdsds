@@ -1,0 +1,90 @@
+# ======================= GENEL / MESAJLAR =======================
+server-name: "ChicagoRP"           # {server} yerine yazilir (prefix, baslik, mesajlar)
+prefix: "&8[&6&l{server}&8] &7» &f"
+join-message: "&8[&a+&8] &f{player} &7şehre geldi &8(&e{online}&8)"
+quit-message: "&8[&c-&8] &f{player} &7şehirden ayrıldı"
+welcome-title: "&6&l{server}"
+welcome-subtitle: "&7Hoş geldin, &f{player}"
+# ======================= MODELLER / KAYNAK PAKETI =======================
+models:
+  enabled: true                    # false: paket yoksa basit blok gorunumleri
+  vehicle-yaw-offset: 0            # araba ters gorunuyorsa 180 (veya /sehir araccevir)
+  sign-yaw-offset: 0               # tabela yazisi ters gorunuyorsa 180 (veya /sehir tabelacevir)
+resource-pack:
+  url: ""                          # ChicagoRP-ResourcePack.zip'in indirme linki
+  sha1: "5b625c7f6cc876488bf33b493a9d35a222b64970"
+  required: true
+vehicle:
+  max-passengers: 4
+# ======================= MESLEK KONTENJANLARI (-1 = sinirsiz) =======================
+job-capacity:
+  polis: 8
+  ciftci: 20
+  kimyager: 8
+  torbaci: 12
+  demirci: 6
+  kargocu: 10
+  silah_ustasi: 3
+  balikci: -1
+  mekanik: 6
+  taksici: 8
+  durumcu: 6
+  kacakci: 5
+  soyguncu: 8
+# ======================= EKONOMI / DIGER =======================
+start-money: 5000
+generator:
+  base-income-per-minute: 150
+  price: 5000
+spawn: {world: world, x: 0, y: 64, z: 0, radius: 40}
+jail: {world: world, x: 0, y: 64, z: 0}
+pvp-cooldown-minutes: 10
+arrest-reward: 2000
+arrest-seconds: 180
+ehliyet-price: 3000
+fishing: {min: 50, max: 400}
+chain:
+  field-rent-price: 2000
+  grow-seconds: 600
+  raw-per-harvest: 10
+  raw-sell-price: 150
+  raw-buy-price: 100
+  refine-seconds: 60
+  delivery-pay: 400
+orders:
+  cargo-pay: 800
+  smith-pay: 1500
+  prep-seconds: 120
+armors:
+  hafif: {name: "&bHafif Zirh", price: 8000, material: IRON, produce: 120, ia: ""}
+  agir:  {name: "&cAgir Zirh",  price: 25000, material: DIAMOND, produce: 240, ia: ""}
+phone-ia: ""
+vehicles:
+  sahin: {name: "Şahin (Tofaş)", price: 15000, speed: 0.20, material: WHITE_CONCRETE, ia: ""}
+  taksi: {name: "Taksi", price: 22000, speed: 0.22, material: YELLOW_CONCRETE, ia: ""}
+  hatchback: {name: "Hatchback", price: 28000, speed: 0.24, material: LIGHT_BLUE_CONCRETE, ia: ""}
+  suv: {name: "SUV", price: 45000, speed: 0.25, material: GRAY_CONCRETE, ia: ""}
+  beyaz_suv: {name: "Beyaz SUV", price: 52000, speed: 0.27, material: WHITE_CONCRETE, ia: ""}
+  kirmizi_sedan: {name: "Kırmızı Sedan", price: 60000, speed: 0.28, material: RED_CONCRETE, ia: ""}
+  trueno: {name: "Trueno", price: 90000, speed: 0.31, material: BLACK_CONCRETE, ia: ""}
+  bmw_m3: {name: "BMW M3 GTR", price: 250000, speed: 0.38, material: BLUE_CONCRETE, ia: ""}
+  bmw_m4: {name: "BMW M4", price: 320000, speed: 0.42, material: ORANGE_CONCRETE, ia: ""}
+  spor: {name: "Spor", price: 450000, speed: 0.46, material: LIME_CONCRETE, ia: ""}
+  super_spor: {name: "Süper Spor", price: 900000, speed: 0.55, material: PURPLE_CONCRETE, ia: ""}
+# ItemsAdder kullanmak icin ia alanina "namespace:item_id" yaz (tek parca verir).
+signs-def:
+  karakol: {units: 23.5, width: 6.5}
+  durumcu: {units: 20.5, width: 10}
+  market: {units: 17.5, width: 9}
+  giyim: {units: 14.5, width: 8}
+  kahve: {units: 26.5, width: 11}
+  silah: {units: 20.5, width: 10}
+  demirci: {units: 20.5, width: 10}
+  kargo: {units: 14.5, width: 8}
+  mekanik: {units: 20.5, width: 10}
+  galeri: {units: 17.5, width: 14}
+  jenerator: {units: 26.5, width: 12}
+  pavyon: {units: 17.5, width: 10}
+  belediye: {units: 23.5, width: 11}
+  hastane: {units: 20.5, width: 14}
+  banka: {units: 14.5, width: 8}
